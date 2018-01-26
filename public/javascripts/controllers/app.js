@@ -179,7 +179,7 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
     var headerHeight = 75;
-    $('.main-menu a, .go-to-top, .lets-talk').bind("click", function(e) {
+    $('.main-menu a, .go-to-top, .l-talk').bind("click", function(e) {
         e.preventDefault();
 
         var target = $(this).attr("href"); //Get the target
