@@ -1,0 +1,46 @@
+#Services{
+  min-height:400px;
+  padding-bottom:30px;
+  background: url(/public/images/bg-services.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position:relative;
+  &:before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #303030;
+    opacity: .8;
+    z-index: 0;
+  }
+  .page-title{
+    color: #fff;
+    &:before{
+      border-color: #f9f9f9;
+    }
+    &:after{
+      background-color: #fff;
+    }
+  }
+  .service{
+    text-align: center;
+    img{
+      width: 140px;
+    }
+    h3, p{
+      color: #fff;
+    }
+    h3{
+      font-size:24px;
+      font-weight: bold;
+    }
+    p{
+      font-size:18px;
+    }
+  }
+}

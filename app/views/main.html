@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/screen.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        #{get 'moreScripts' /}
+        <link href="https://bootswatch.com/3/cosmo/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="public/stylesheets/animate-custom.css" rel="stylesheet">
+        <link href="public/stylesheets/animate.css" rel="stylesheet">
+     </head>
+    <body ng-app="portfolio">
+        <header ng-controller="headerCtrl">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#Home">
+                            <img src="/public/images/logo.png">
+                            <span class="name">Mark Dela Cueva<br>
+                                <font>Front-end Web Developer</font>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li ng-repeat="nav in menu" class="main-menu">
+                                <a href="{{nav.link}}" class="nav-link">{{nav.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="Home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xs-8">
+                        <p class="home-intro animated bounceInLeft">
+                            <b>LET'S</b> BUILD <b>SOMETHING</b> GREAT <b>TOGETHER</b>
+                        </p>
+                        <p class="home-intro-more animated bounceInLeft">
+                            I'm a front-end web developer based in the Philippines. I make responsive and stunning website designs.
+                        </p>
+                        <a href="#Contact">
+                            <button class="lets-talk animated slideInUp">  LET'S TALK  </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------- ABOUT --------->
+        <section id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 about-title title-wrapper">
+                        <h1 class="page-title ">ABOUT ME</h1>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 about-1">
+                        <h2>WHO <b>AM I</b>?</h2>
+                        <p>
+                            An ambitious problem solver with a passion for online business, and who would like to join a team of like-minded developers.  <br><br>Takes responsibility for my own personal development, continually evaluating and upgrading my skills so that I can stays at the cutting edge of web development.
+                        </p>
+                        <a class="font-bold download-cv" href="/public/MARK_DELA_CUEVA.pdf">
+                            <button class="btn btn-default btn-lg font-bold">DOWNLOAD MY CV</button>
+                        </a>
+                        <div class="experience">
+                            <h2><b>EX</b>PERIENCE</h2>
+                            <table class="edu-ex-table">
+                                <tr>
+                                    <th>
+                                        <b>Kinpo Electronics (Phil.), Inc.</b><br>
+                                        2015 - 2017
+                                    </th>
+                                    <td>
+                                        <h3>Software <b>Engineer</b></h3>
+                                        <ul>
+                                            <li>Discuss options with business units to make sure websites meet their needs as well as the needs of their customers.</li>
+                                            <li>Develop websites for variety of business units while maintaining consistent feel and brand awareness.</li>
+                                            <li>Provide technical support to high-level users.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <b>SPi Global</b><br>
+                                        2014 - 2015
+                                    </th>
+                                    <td>
+                                        <h3><b>Software </b>Engineer</h3>
+                                        <ul>
+                                            <li>Managed websites and design / creation for clients.</li>
+                                            <li>Provided direct assistance to head web developer.</li>
+                                            <li>Performed weekly assessments of all websites and software to look for potential problems or crashes.</li>
+                                            <li>Participated in weekly mentoring sessions with web developers within the organization.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 about-2">
+                        <h2>EXPERT <b>IN</b></h2>
+                        <p>
+                            I specialize in front-end web development and the tools I used are listed below:
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                HTML / HTML5
+                                <div class="progress">
+                                    <div class="progress-bar html" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        90%
+                                    </div>
+                                </div>
+                                CSS / CSS3 / SASS
+                                <div class="progress">
+                                    <div class="progress-bar css" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        87%
+                                    </div>
+                                </div>
+                                Javascript / JQuery
+                                <div class="progress">
+                                    <div class="progress-bar javascript" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        84%
+                                    </div>
+                                </div>
+                                AngularJs
+                                <div class="progress">
+                                    <div class="progress-bar angular" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        80%
+                                    </div>
+                                </div>
+                                Bootstrap
+                                <div class="progress">
+                                    <div class="progress-bar bootstrap" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        86%
+                                    </div>
+                                </div>
+                                <!--Photoshop
+                                <div class="progress">
+                                    <div class="progress-bar photoshop" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        83%
+                                    </div>
+                                </div>-->
+                                WebGL (Three.js)
+                                <div class="progress">
+                                    <div class="progress-bar webgl" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        80%
+                                    </div>
+                                </div>
+                                Play Framework
+                                <div class="progress">
+                                    <div class="progress-bar play" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        83%
+                                    </div>
+                                </div>
+                                <div class="education">
+                                    <h2><b>EDU</b>CATION</h2>
+                                    <table class="edu-ex-table">
+                                        <tr>
+                                            <th>
+                                                <b>Batangas State University</b><br>
+                                                2010 - 2014
+                                            </th>
+                                            <td>
+                                                <h3>BS <b>Information Technology</b></h3>
+                                                The study or use of systems (especially computers and telecommunications) for storing, retrieving, and sending information.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------- Services ----------->
+        <section id="Services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 service-title title-wrapper">
+                        <h1 class="page-title">WHAT I DO</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service service-1">
+                        <img class="img1" src="public/images/1.png">
+                        <h3>Responsive Design</h3>
+                        <p>Day by day, the number of devices, platforms, and browsers that need to work with your site grows. Responsive web design represents a fundamental shift in how we’ll build websites for the decade to come.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service service-2">
+                        <img class="img1" src="public/images/2.jpg">
+                        <h3>Web Development</h3>
+                        <p> If you really want to generate more business with a quality website. This may be the first line of communication between you and potential guests or visitors.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 service service-3">
+                        <img class="img1" src="public/images/4.png">
+                        <h3>Website Maintenance</h3>
+                        <p> All businesses need regular website maintenance to attract and retain customers, maintain search engine rankings and present new information, products and services to the public. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------- WORKS ----------->
+        <section id="Works" ng-controller="portfolioCtrl">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 work-title title-wrapper">
+                        <h1 class="page-title">AWESOME WORKS</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 works-done" ng-repeat="item in portfolio">
+                        <div class="grid mask">
+                            <figure> <img class="img-responsive" src="{{item.image}}" alt="">
+                                <figcaption>
+                                    <h5>{{item.caption}}</h5>
+                                    <a data-toggle="modal" href="{{item.link}}" class="btn btn-default">More Details</a> </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" ng-repeat="mod in modals" id="{{mod.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">{{mod.title}}</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p><img class="img-responsive" ng-src="{{mod.thumbnail}}" alt=""></p>
+                                    <p>{{mod.content}}</p>
+                                    <p><b><a target="_blank" ng-href="{{mod.link}}">Visit Site</a></b></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------- Contact ----------->
+        <section id="Contact" ng-controller="contactCtrl">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 title-wrapper contact contact-title">
+                        <div class="col-xs-12" style="margin-bottom:30px;">
+                            <h1 class="page-title-contact">CONTACT ADDRESS</h1>
+                        </div>
+                        <p>
+                            <span class="glyphicon glyphicon-earphone"></span>
+                            0 - 935 - 5822215
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            delacuevam27@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 title-wrapper contact-form">
+                        <form action="mailto:delacuevam27@gmail.com" method="post" enctype="text/plain">
+                            <div class="col-xs-12">
+                                <span class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi" name="Name" type="text" id="input-4" required/>
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                                    <span class="input__label-content input__label-content--hoshi">Name</span>
+                                    </label>
+                                </span>
+                                <span class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi" name="Email" type="text" id="input-4" required/>
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                                        <span class="input__label-content input__label-content--hoshi">Email</span>
+                                    </label>
+                                </span>
+                                <span class="input input--hoshi">
+                                    <input class="input__field input__field--hoshi" name="Message" type="text" id="input-4" required/>
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                                        <span class="input__label-content input__label-content--hoshi">Message</span>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="col-xs-12">
+                                <input class="btn btn-lg btn-default" type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                        <p>
+                            Mark Dela Cueva
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <a href="https://www.facebook.com/mark.delacueva.1?ref=br_rs">
+                            <img style="width:48px;position:absolute;right:0px;top:-4px;" src="/public/images/fb.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#Home" class="btn btn-default go-to-top" style="border:solid 2pt #fff;position:fixed;right:10px;bottom:50px;">
+            <span style="color: #fff;font-size:24px;" class="glyphicon glyphicon-chevron-up "></span>
+        </a>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="@{'/public/javascripts/controllers/app.js'}"></script>
+    <script src="@{'/public/javascripts/classie.js'}"></script>
+</html>

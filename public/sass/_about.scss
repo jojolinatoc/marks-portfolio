@@ -1,0 +1,42 @@
+#About{
+  min-height:92vh;
+  background-color: #F9F9F9;
+  padding-bottom:30px;
+  .download-cv{
+    button{
+      margin:30px 0 41px 0;
+    }
+  }
+  .edu-ex-table{
+    h3{
+      font-size:24px;
+    }
+    td{
+      padding-bottom:10px;
+      border-bottom: solid 1px #e2e2e2;
+    }
+  }
+  .education, .experience{
+    border:solid 1px #e2e2e2;
+    padding: 0px 20px;
+    border-radius: 2px;
+    background: #fff;
+    ul{
+      list-style:square;
+      li{
+        padding:5px 0;
+      }
+    }
+  }
+  .progress{
+    height: 13px;
+  }
+  .progress-bar{
+    width: 0;
+    font-size: 12px;
+    line-height: 13px;
+    background: #222;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+  }
+}

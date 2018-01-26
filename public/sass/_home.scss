@@ -1,0 +1,52 @@
+#Home{
+  height:100vh;
+  background: url(/public/images/test-bg.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .container{
+    padding:20% 0 0 0;
+    .home-intro{
+      font-size: 36px;
+    }
+    .home-intro-more{
+      font-size: 24px;
+    }
+    .lets-talk{
+      border: solid 2px #222;
+      background: transparent;
+      outline: none;
+      margin-top: 20px;
+      font-size: 20px;
+      padding: 15px 25px;
+      font-weight: bold;
+      transition: all .2s;
+      color: #222;
+      &:hover{
+        background: #222;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px){
+  #Home{
+    height:auto;
+    .container{
+      padding:20% 0 20% 0;
+      .row{
+        margin: 0;
+      }
+      .home-intro{
+      }
+      .home-intro-more{
+      }
+    }
+  }
+}
+@media screen and (max-width: 1050px){
+  #Home{
+    background: url(/public/images/test-bg.jpg) no-repeat center center fixed;
+  }
+}

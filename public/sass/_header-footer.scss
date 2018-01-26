@@ -1,0 +1,42 @@
+header{
+  .navbar{
+    min-height: 75px;
+    margin-bottom: 0;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    .container-fluid{
+      max-width: 1163px;
+      margin: 10px auto;
+      .navbar-brand{
+        padding: 0;
+        img{
+          width:60px;
+          height:60px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        .name{
+          display: inline-block;
+          vertical-align: middle;
+          font{
+            font-size:12px;
+          }
+        }
+      }
+      .nav-link{
+        font-size:18px;
+      }
+    }
+  }
+}
+footer{
+  width: 100%;
+  padding:20px 0;
+  background: #222;
+  color: #fff;
+  ul{
+    display:inline-block;
+    li{
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+html, body, p, i, b, li, font, a, button, h1, h2, h3, h4, h5,figcaption, input, textarea{
+  font-family: 'Raleway', sans-serif !important;
+}
+span{
+  font-family: 'Raleway', sans-serif;
+}
+.title-wrapper{
+  margin-bottom: 30px;
+}
+.page-title{
+  font-weight:bold;
+  font-size:38px;
+  text-align:center;
+  margin: 40px 0 20px 0;
+  &:before{
+    bottom: 0;
+    width: 100px;
+    padding: 4px 0 5px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #737373;
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  &:after{
+    bottom: 5px;
+    width: 200px;
+    height: 1px;
+    background-color: #303030;
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+.page-title-contact{
+  font-weight:bold;
+  font-size:38px;
+  text-align:left;
+  margin: 40px 0 20px 0;
+  &:before{
+    bottom: 0;
+    width: 190px;
+    padding: 4px 0 5px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #737373;
+    content: " ";
+    position: absolute;
+    left: 11px;
+  }
+  &:after{
+    bottom: 5px;
+    width: 320px;
+    height: 1px;
+    background-color: #303030;
+    content: " ";
+    position: absolute;
+    left: 11px;
+  }
+}
+.title-hr{
+  width:300px;
+  margin: 0 auto;
+}
+.font-bold{
+  font-weight: bold !important;
+}

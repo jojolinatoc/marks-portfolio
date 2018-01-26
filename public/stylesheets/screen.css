@@ -1,0 +1,684 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_general.scss */
+html, body, p, i, b, li, font, a, button, h1, h2, h3, h4, h5, figcaption, input, textarea {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+/* line 4, ../sass/_general.scss */
+span {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 7, ../sass/_general.scss */
+.title-wrapper {
+  margin-bottom: 30px;
+}
+
+/* line 10, ../sass/_general.scss */
+.page-title {
+  font-weight: bold;
+  font-size: 38px;
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+/* line 15, ../sass/_general.scss */
+.page-title:before {
+  bottom: 0;
+  width: 100px;
+  padding: 4px 0 5px;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #737373;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* line 29, ../sass/_general.scss */
+.page-title:after {
+  bottom: 5px;
+  width: 200px;
+  height: 1px;
+  background-color: #303030;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 42, ../sass/_general.scss */
+.page-title-contact {
+  font-weight: bold;
+  font-size: 38px;
+  text-align: left;
+  margin: 40px 0 20px 0;
+}
+/* line 47, ../sass/_general.scss */
+.page-title-contact:before {
+  bottom: 0;
+  width: 190px;
+  padding: 4px 0 5px;
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #737373;
+  content: " ";
+  position: absolute;
+  left: 11px;
+}
+/* line 58, ../sass/_general.scss */
+.page-title-contact:after {
+  bottom: 5px;
+  width: 320px;
+  height: 1px;
+  background-color: #303030;
+  content: " ";
+  position: absolute;
+  left: 11px;
+}
+
+/* line 68, ../sass/_general.scss */
+.title-hr {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* line 72, ../sass/_general.scss */
+.font-bold {
+  font-weight: bold !important;
+}
+
+/* line 2, ../sass/_header-footer.scss */
+header .navbar {
+  min-height: 75px;
+  margin-bottom: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+/* line 6, ../sass/_header-footer.scss */
+header .navbar .container-fluid {
+  max-width: 1163px;
+  margin: 10px auto;
+}
+/* line 9, ../sass/_header-footer.scss */
+header .navbar .container-fluid .navbar-brand {
+  padding: 0;
+}
+/* line 11, ../sass/_header-footer.scss */
+header .navbar .container-fluid .navbar-brand img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* line 17, ../sass/_header-footer.scss */
+header .navbar .container-fluid .navbar-brand .name {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 20, ../sass/_header-footer.scss */
+header .navbar .container-fluid .navbar-brand .name font {
+  font-size: 12px;
+}
+/* line 25, ../sass/_header-footer.scss */
+header .navbar .container-fluid .nav-link {
+  font-size: 18px;
+}
+
+/* line 31, ../sass/_header-footer.scss */
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background: #222;
+  color: #fff;
+}
+/* line 36, ../sass/_header-footer.scss */
+footer ul {
+  display: inline-block;
+}
+/* line 38, ../sass/_header-footer.scss */
+footer ul li {
+  display: inline-block;
+}
+
+/* line 1, ../sass/_home.scss */
+#Home {
+  height: 100vh;
+  background: url(/public/images/test-bg.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 8, ../sass/_home.scss */
+#Home .container {
+  padding: 20% 0 0 0;
+}
+/* line 10, ../sass/_home.scss */
+#Home .container .home-intro {
+  font-size: 36px;
+}
+/* line 13, ../sass/_home.scss */
+#Home .container .home-intro-more {
+  font-size: 24px;
+}
+/* line 16, ../sass/_home.scss */
+#Home .container .lets-talk {
+  border: solid 2px #222;
+  background: transparent;
+  outline: none;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 15px 25px;
+  font-weight: bold;
+  transition: all .2s;
+  color: #222;
+}
+/* line 26, ../sass/_home.scss */
+#Home .container .lets-talk:hover {
+  background: #222;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 34, ../sass/_home.scss */
+  #Home {
+    height: auto;
+  }
+  /* line 36, ../sass/_home.scss */
+  #Home .container {
+    padding: 20% 0 20% 0;
+  }
+  /* line 38, ../sass/_home.scss */
+  #Home .container .row {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /* line 49, ../sass/_home.scss */
+  #Home {
+    background: url(/public/images/test-bg.jpg) no-repeat center center fixed;
+  }
+}
+/* line 1, ../sass/_about.scss */
+#About {
+  min-height: 92vh;
+  background-color: #F9F9F9;
+  padding-bottom: 30px;
+}
+/* line 6, ../sass/_about.scss */
+#About .download-cv button {
+  margin: 30px 0 41px 0;
+}
+/* line 11, ../sass/_about.scss */
+#About .edu-ex-table h3 {
+  font-size: 24px;
+}
+/* line 14, ../sass/_about.scss */
+#About .edu-ex-table td {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #e2e2e2;
+}
+/* line 19, ../sass/_about.scss */
+#About .education, #About .experience {
+  border: solid 1px #e2e2e2;
+  padding: 0px 20px;
+  border-radius: 2px;
+  background: #fff;
+}
+/* line 24, ../sass/_about.scss */
+#About .education ul, #About .experience ul {
+  list-style: square;
+}
+/* line 26, ../sass/_about.scss */
+#About .education ul li, #About .experience ul li {
+  padding: 5px 0;
+}
+/* line 31, ../sass/_about.scss */
+#About .progress {
+  height: 13px;
+}
+/* line 34, ../sass/_about.scss */
+#About .progress-bar {
+  width: 0;
+  font-size: 12px;
+  line-height: 13px;
+  background: #222;
+  -webkit-transition: width 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 1s;
+}
+
+/* line 1, ../sass/_services.scss */
+#Services {
+  min-height: 400px;
+  padding-bottom: 30px;
+  background: url(/public/images/bg-services.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+/* line 10, ../sass/_services.scss */
+#Services:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  opacity: .8;
+  z-index: 0;
+}
+/* line 21, ../sass/_services.scss */
+#Services .page-title {
+  color: #fff;
+}
+/* line 23, ../sass/_services.scss */
+#Services .page-title:before {
+  border-color: #f9f9f9;
+}
+/* line 26, ../sass/_services.scss */
+#Services .page-title:after {
+  background-color: #fff;
+}
+/* line 30, ../sass/_services.scss */
+#Services .service {
+  text-align: center;
+}
+/* line 32, ../sass/_services.scss */
+#Services .service img {
+  width: 140px;
+}
+/* line 35, ../sass/_services.scss */
+#Services .service h3, #Services .service p {
+  color: #fff;
+}
+/* line 38, ../sass/_services.scss */
+#Services .service h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 42, ../sass/_services.scss */
+#Services .service p {
+  font-size: 18px;
+}
+
+/* line 1, ../sass/_works.scss */
+#Works {
+  min-height: 90vh;
+  padding-bottom: 30px;
+  background: #f9f9f9;
+  /* Caption Style */
+}
+/* line 5, ../sass/_works.scss */
+#Works .works-done {
+  padding: 20px;
+  height: 300px;
+}
+/* line 9, ../sass/_works.scss */
+#Works .grid {
+  border: solid 3pt #fff;
+  cursor: pointer;
+}
+/* line 13, ../sass/_works.scss */
+#Works .grid figure {
+  margin: 0;
+  position: relative;
+  border: none;
+}
+/* line 18, ../sass/_works.scss */
+#Works .grid figure img {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+/* line 23, ../sass/_works.scss */
+#Works .grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  background-color: #34b1c4;
+}
+/* line 31, ../sass/_works.scss */
+#Works .grid figcaption h5 {
+  margin: 0;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 1px;
+}
+/* line 41, ../sass/_works.scss */
+#Works .grid figcaption a {
+  text-align: left;
+  padding: 5px 10px;
+  margin-left: 20px;
+  display: inline-block;
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 13px;
+}
+/* line 51, ../sass/_works.scss */
+#Works .mask figure {
+  overflow: hidden;
+}
+/* line 54, ../sass/_works.scss */
+#Works .mask figure img {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+/* line 59, ../sass/_works.scss */
+#Works .mask figure:hover img, #Works .mask figure.cs-hover img {
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+/* line 65, ../sass/_works.scss */
+#Works .mask figcaption {
+  height: 50px;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+/* line 79, ../sass/_works.scss */
+#Works .mask figure:hover figcaption, #Works .mask figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+/* line 89, ../sass/_works.scss */
+#Works .mask figcaption a {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 100, ../sass/_works.scss */
+  #Works .works-done {
+    padding: 20px;
+    height: 100%;
+  }
+}
+/* line 3, ../sass/_contact.scss */
+#Contact .contact p {
+  font-size: 18px;
+  margin: 15px 0 0px 11px;
+}
+/* line 6, ../sass/_contact.scss */
+#Contact .contact p span {
+  border: solid 1px #222;
+  padding: 10px;
+  margin-right: 20px;
+}
+/* line 13, ../sass/_contact.scss */
+#Contact .contact-form {
+  background: #f9f9f9;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+/* line 18, ../sass/_contact.scss */
+#Contact .input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em 0 1em 0;
+  max-width: 100%;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+/* line 28, ../sass/_contact.scss */
+#Contact .input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: bold;
+  -webkit-appearance: none;
+  /* for box shadows to show on iOS */
+}
+/* line 42, ../sass/_contact.scss */
+#Contact .input__field:focus {
+  outline: none;
+}
+/* line 46, ../sass/_contact.scss */
+#Contact .input__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #6a7989;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 64, ../sass/_contact.scss */
+#Contact .input__label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+/* line 71, ../sass/_contact.scss */
+#Contact .graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+/* line 78, ../sass/_contact.scss */
+#Contact .icon {
+  color: #ddd;
+  font-size: 150%;
+}
+/* line 82, ../sass/_contact.scss */
+#Contact .input--hoshi {
+  overflow: hidden;
+}
+/* line 86, ../sass/_contact.scss */
+#Contact .input__field--hoshi {
+  margin-top: 1em;
+  padding: 1.6em 0.15em;
+  width: 100%;
+  background: transparent;
+  color: #222;
+  font-size: 18px;
+}
+/* line 95, ../sass/_contact.scss */
+#Contact .input__label--hoshi {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.25em;
+  width: 100%;
+  height: calc(100% - 1em);
+  text-align: left;
+  pointer-events: none;
+}
+/* line 106, ../sass/_contact.scss */
+#Contact .input__label-content--hoshi {
+  position: absolute;
+}
+/* line 110, ../sass/_contact.scss */
+#Contact .input__label--hoshi::before,
+#Contact .input__label--hoshi::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 10px);
+  border-bottom: 1px solid #B9C1CA;
+}
+/* line 121, ../sass/_contact.scss */
+#Contact .input__label--hoshi::after {
+  margin-top: 2px;
+  border-bottom: 4px solid red;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+/* line 130, ../sass/_contact.scss */
+#Contact .input__label--hoshi-color-1::after {
+  border-color: #222;
+}
+/* line 134, ../sass/_contact.scss */
+#Contact .input__label--hoshi-color-2::after {
+  border-color: #00ffaa;
+}
+/* line 138, ../sass/_contact.scss */
+#Contact .input__label--hoshi-color-3::after {
+  border-color: #ff5500;
+}
+/* line 142, ../sass/_contact.scss */
+#Contact .input__field--hoshi:focus + .input__label--hoshi::after,
+#Contact .input--filled .input__label--hoshi::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 148, ../sass/_contact.scss */
+#Contact .input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,
+#Contact .input--filled .input__label-content--hoshi {
+  -webkit-animation: anim-1 0.3s forwards;
+  animation: anim-1 0.3s forwards;
+}
+@-webkit-keyframes anim-1 {
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(1em, 0, 0);
+    transform: translate3d(1em, 0, 0);
+  }
+  51% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1em, -40%, 0);
+    transform: translate3d(-1em, -40%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -40%, 0);
+  }
+}
+@keyframes anim-1 {
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(1em, 0, 0);
+    transform: translate3d(1em, 0, 0);
+  }
+  51% {
+    opacity: 0;
+    -webkit-transform: translate3d(-1em, -40%, 0);
+    transform: translate3d(-1em, -40%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -40%, 0);
+    transform: translate3d(0, -40%, 0);
+  }
+}
