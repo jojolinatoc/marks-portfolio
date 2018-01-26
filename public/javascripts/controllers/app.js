@@ -174,7 +174,7 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
     var headerHeight = 75;
-    $('.main-menu a, .go-to-top').bind("click", function(e) {
+    $("a[href*=#]").bind("click", function(e) {
         e.preventDefault();
 
         var target = $(this).attr("href"); //Get the target
