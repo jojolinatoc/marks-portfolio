@@ -253,7 +253,7 @@ header .navbar .container-fluid .nav-link {
 /* line 31, ../sass/_header-footer.scss */
 footer {
   width: 100%;
-  padding: 20px 0;
+  padding: 0;
   background: #222;
   color: #fff;
 }
@@ -269,7 +269,7 @@ footer ul li {
 /* line 1, ../sass/_home.scss */
 #Home {
   height: 100vh;
-  background: url(/public/images/test-bg.jpg) no-repeat fixed;
+  background: url(/public/images/mark-bg.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
