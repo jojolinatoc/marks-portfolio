@@ -104,7 +104,12 @@ portfolio.controller('portfolioCtrl', function($scope) {
         }
     ];
 });
-
+$(window).on('load',function() {
+    $(".preloader").fadeOut("slow", function(){
+        $(".preloader-left").addClass("slide-left");
+        $(".preloader-right").addClass("slide-right");
+    });
+});
 $(window).scroll(function() {
     var aT = $('#About').offset().top,
         sT = $('#Services').offset().top,
