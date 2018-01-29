@@ -322,7 +322,7 @@ footer ul li {
 @media screen and (max-width: 1050px) {
   /* line 49, ../sass/_home.scss */
   #Home {
-    background: url(/public/images/test-bg.jpg) no-repeat center center fixed;
+    background: url(/public/images/mark-bg.JPG) no-repeat center center fixed;
   }
 }
 /* line 1, ../sass/_about.scss */
