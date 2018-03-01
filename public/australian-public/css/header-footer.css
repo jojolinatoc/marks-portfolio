@@ -6,7 +6,7 @@
 	background-color: #fff;
 }
 footer{
-	padding: 3rem 0;
+	padding: 3rem 0 0 0;
 }
 .small-strong{
 	font-size:28px;
@@ -37,4 +37,12 @@ footer{
 }
 .margin-l-sm{
 	margin-left: 20px;
+}
+.copyright{
+    background: #000;
+    padding: 15px 0;
+    border-top: solid 1px #F05F40;
+}
+.copyright p{
+     font-size: 14px;
 }
