@@ -31,10 +31,23 @@
     <link rel="stylesheet" type="text/css" href="public/australian-public/css/select/cs-select.css" />
     <link rel="stylesheet" type="text/css" href="public/australian-public/css/select/cs-skin-border.css" />
 
+    <script src="public/australian-public/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load',function() {
+            $(".preloader").fadeOut("slow", function(){
+                $(".preloader-left").addClass("slide-left");
+                $(".preloader-right").addClass("slide-right");
+            });
+        });
+    </script>
   </head>
 
   <body id="page-top">
-
+      <div class="preloader">
+          <div class="spinner"><img src="public/australian-public/img/status.gif"></div>
+      </div>
+      <div class="preloader-left"></div>
+      <div class="preloader-right"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -331,7 +344,6 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="public/australian-public/vendor/jquery/jquery.min.js"></script>
     <script src="public/australian-public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
