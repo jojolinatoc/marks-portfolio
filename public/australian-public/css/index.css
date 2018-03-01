@@ -1,9 +1,9 @@
 .book-now{
-	padding: 25px 30px;
-	background: rgba(0, 0, 0, .4);
+    padding: 25px 30px;
+    background: rgba(0, 0, 0, .4);
 }
 .book-now-btn, .book-here{
-	margin-top: 28px;
+    margin-top: 28px;
 }
 .book-here p{
     font-size: 1.2rem !important;
@@ -13,18 +13,18 @@
     font-size: 0.9rem;
 }
 .more-courses{
-	padding: 2rem 0;
+    padding: 2rem 0;
 }
 .contact-form input, textarea{
-	width:100%;
-	margin:20px 0;
-	padding: 10px 20px;
-	font-size:24px;
-	outline:none;
-	border: solid 1pt #000;
+    width:100%;
+    margin:20px 0;
+    padding: 10px 20px;
+    font-size:24px;
+    outline:none;
+    border: solid 1pt #000;
 }
 .contact-form input:focus, textarea:focus{
-	border: solid 1pt #D9271F;
+    border: solid 1pt #D9271F;
 }
 
 .preloader {
@@ -39,18 +39,19 @@
     background: transparent;
 }
 
-.preloader .spinner {
+.preloader .spinner img{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -32.5px;
-    margin-left: -32.5px;
+    width:350px;
+    margin-top: -175px;
+    margin-left: -175px;
 }
 .preloader-left {
     position: fixed;
     width: 50%;
     height: 100%;
-    background: white;
+    background: #F44436;
     z-index: 99999;
     transition: .7s .3s transform ease-in-out;
 }
@@ -65,7 +66,7 @@
     width: 50%;
     right: 0;
     height: 100%;
-    background: white;
+    background: #F44436;
     z-index: 99999;
     transition: .7s .3s transform ease-in-out;
 }
