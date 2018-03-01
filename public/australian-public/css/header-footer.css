@@ -21,7 +21,7 @@ footer{
 	color:#fff;
 }
 .footer-quick-links li a:hover{
-	color:#F05F40;
+	color:#D9271F;
 }
 .full-width{
 	width:100%;
@@ -41,7 +41,7 @@ footer{
 .copyright{
     background: #000;
     padding: 15px 0;
-    border-top: solid 1px #F05F40;
+    border-top: solid 1px #D9271F;
 }
 .copyright p{
      font-size: 14px;

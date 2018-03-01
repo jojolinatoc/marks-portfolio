@@ -14,8 +14,8 @@
 	padding: 10px 20px;
 	font-size:24px;
 	outline:none;
-	border: solid 2pt #000;
+	border: solid 1pt #000;
 }
 .contact-form input:focus, textarea:focus{
-	border: solid 2pt #F05F40;
+	border: solid 1pt #D9271F;
 }

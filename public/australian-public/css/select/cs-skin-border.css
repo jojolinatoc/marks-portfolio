@@ -51,11 +51,11 @@ div.cs-skin-border {
 .cs-skin-border.cs-active > span {
 	background: #fff;
 	border-color: #fff;
-	color: #F05F40;
+	color: #D9271F;
 }
 
 .cs-skin-border .cs-options {
-	color: #F05F40;
+	color: #D9271F;
 	font-size: 0.75em;
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, visibility 0s 0.2s;
