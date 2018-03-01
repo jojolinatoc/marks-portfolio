@@ -1,0 +1,40 @@
+.site-logo{
+	width:200px;
+	height: auto;
+}
+#mainNav{
+	background-color: #fff;
+}
+footer{
+	padding: 3rem 0;
+}
+.small-strong{
+	font-size:28px;
+}
+.footer-quick-links{
+	list-style: none;
+}
+.footer-quick-links li{
+	padding: 10px 0;
+}
+.footer-quick-links li a{
+	color:#fff;
+}
+.footer-quick-links li a:hover{
+	color:#F05F40;
+}
+.full-width{
+	width:100%;
+}
+.align-middle{
+	vertical-align: middle;
+}
+.zero-padding{
+	padding: 0;
+}
+.contact-detail{
+	margin-left: 20px;
+}
+.margin-l-sm{
+	margin-left: 20px;
+}

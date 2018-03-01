@@ -1,0 +1,21 @@
+.book-now{
+	padding: 25px 30px;
+	background: rgba(0, 0, 0, .4);
+}
+.book-now-btn{
+	margin-top: 28px;
+}
+.more-courses{
+	padding: 2rem 0;
+}
+.contact-form input, textarea{
+	width:100%;
+	margin:20px 0;
+	padding: 10px 20px;
+	font-size:24px;
+	outline:none;
+	border: solid 2pt #000;
+}
+.contact-form input:focus, textarea:focus{
+	border: solid 2pt #F05F40;
+}
