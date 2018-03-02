@@ -39,13 +39,16 @@
     background: transparent;
 }
 
-.preloader .spinner img{
+.preloader .spinner{
     position: absolute;
     top: 50%;
     left: 50%;
-    width:350px;
-    margin-top: -175px;
-    margin-left: -175px;
+    width:100px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.preloader .spinner img{
+    width:100px;
 }
 .preloader-left {
     position: fixed;
