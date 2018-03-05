@@ -54,7 +54,15 @@
       <div class="preloader-left"></div>
       <div class="preloader-right"></div>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="top-general-charge">
+          <div class="top-general-charge-content">
+              <i class="fa fa-calendar fa-1x mb-1 sr-contact align-middle"></i>
+              <span>Mon-Friday | 9:00am - 5:30pm AEST</span>
+              <i class="fa fa-phone fa-1x mb-1 sr-contact align-middle"></i>
+              <span class="align-middle">1300 475 093</span>
+          </div>
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
         	<img class="site-logo" src="public/australian-public/img/logo.png">
@@ -316,11 +324,11 @@
              <ul class="footer-quick-links zero-padding">
                 <li class="full-width">
                    <i class="fa fa-phone fa-2x mb-3 sr-contact align-middle"></i> 
-                   <span class="align-middle contact-detail">0431 301 872</span>
+                   <span class="align-middle contact-detail">(08) 8596 4243</span>
                 </li>
                 <li class="full-width">
                     <i class="fa fa-envelope-o fa-2x mb-3 sr-contact align-middle"></i> 
-                   <span class="align-middle contact-detail">mark@australianfireandfirstaid.com</span>
+                   <span class="align-middle contact-detail">info@affa.net.au</span>
                 </li>
               </ul>
           </div>
@@ -367,6 +375,18 @@
           new SelectFx(el);
         } );
       })();
+      window.onscroll = function() {stickyMenu()};
+
+      var navbar = document.getElementById("mainNav");
+      var sticky = navbar.offsetTop;
+
+      function stickyMenu() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+          } else {
+              navbar.classList.remove("sticky");
+          }
+      }
     </script>
   </body>
 
